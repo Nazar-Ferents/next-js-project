@@ -18,7 +18,7 @@ const UserPage:FC<PropsType> =async ({params}) => {
     return (
         <div>
             {
-                `User Page Content ` }
+                `User Page Content ${result.id}` }
         </div>
     );
 };

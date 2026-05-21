@@ -1,9 +1,10 @@
+import UsersComponent from "@/src/components/users/UsersComponent";
 
 
 const UsersPage = () => {
     return (
         <div>
-users content
+            <UsersComponent/>
         </div>
     );
 };
