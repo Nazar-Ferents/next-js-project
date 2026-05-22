@@ -8,7 +8,11 @@ const UsersComponent = async () => {
         <div>
             {
                 users.map((user) => (<div key={user.id}>
-                    <Link href={'/users/' + user.id.toString()}>{user.name}</Link>
+                    <Link href={
+                        {pathname:'/users/' + user.id.toString(),
+                            query:{data:JSON.stringify(user)}
+                    }
+                    }>{user.name}</Link>
                 </div>))
             }
         </div>
