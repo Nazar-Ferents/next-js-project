@@ -6,7 +6,7 @@ const CarsPage = async () => {
 
     const cars =await carServiceAPI.getCars()
     return (
-        <div>
+        <div className='grid'>
             {
                 cars.map(car => (<CarComponent key={car.id} car={car} />))
             }

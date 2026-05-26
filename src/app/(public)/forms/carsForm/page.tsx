@@ -3,7 +3,6 @@ import {sendCar} from "@/src/app/actions/car.actions";
 import {CarFormData, carSchema} from "@/lib/schema/shema";
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
-import Link from "next/link";
 
 const CarsFromPage = () => {
 
@@ -17,7 +16,7 @@ const CarsFromPage = () => {
 
     return (
         <div>
-            <form onSubmit={handleSubmit(sendCar)}>
+            <form onSubmit={handleSubmit(sendCar)} className="form">
                 <div>
                     <input {...register('brand')} placeholder="Brand" />
                     {errors.brand && (<p>{errors.brand.message}</p>)}

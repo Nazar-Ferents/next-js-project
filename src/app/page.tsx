@@ -1,7 +1,7 @@
 
 export default function Home() {
   return (
-    <div >
+    <div className='container'>
       <h1>Cars</h1>
 
 

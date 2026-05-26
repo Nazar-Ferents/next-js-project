@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #ff3b3b;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 15px 20px;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+
+.car-card {
+    background: #161616;
+    border: 1px solid #2a2a2a;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.car-card:hover {
+    border-color: #ff3b3b;
+    transform: translateY(-2px);
+}
+
+.car-card h3 {
+    margin: 0;
+    color: #ff3b3b;
+}
+
+.car-card span {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form {
+    width: 300px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form input {
+    padding: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 6px;
+}
+
+.form input:focus {
+    border-color: #ff3b3b;
+    outline: none;
+}
+
+.form button {
+    padding: 10px;
+    background: #ff3b3b;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.form button:hover {
+    background: #ff1f1f;
+}
+
+.form p {
+    color: #ff3b3b;
+    font-size: 12px;
+}
