@@ -7,9 +7,9 @@ export const carServiceAPI = {
 
     getCars: async ():Promise<ICar[]> => {
 
-        const cars = await fetch(`${baseURL}/cars`)
+        return await fetch(`${baseURL}/cars`)
             .then(res => res.json())
-        return cars;
+
     },
     postCar:async (data: CarFormData) => {
 
