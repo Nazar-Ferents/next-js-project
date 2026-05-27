@@ -1,18 +1,11 @@
 'use server'
 
 import {CarFormData} from "@/lib/schema/shema";
-import {baseURL} from "@/src/app/constants/constants";
+import {carServiceAPI} from "@/src/app/services/car.service";
 export const sendCar = async (data: CarFormData) => {
 
-    const res = await fetch(`${baseURL}/cars`, {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {"Content-Type": "application/json"}
+    const carsData = await carServiceAPI.postCar(data)
 
-    })
-
-
-    const json:CarFormData = await res.json();
-    return json;
+    console.log(carsData);
 
 }
